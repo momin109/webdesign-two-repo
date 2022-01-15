@@ -131,7 +131,7 @@ margin-top: 15px;
 
 
 .slider{
-    background-image: url(walmart/walmart1.jpg);
+    background-image: url(walmart/walmartn1.jpg);
     background-image: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,16 +143,16 @@ margin-top: 15px;
 }
 @keyframes slide{
     25%{
-        background-image: url(walmart/walmart2.jpg); 
+        background-image: url(walmart/walmartn2.jpg); 
     }
     50%{
-        background-image: url(walmart/walmart3.jpg); 
+        background-image: url(walmart/walmartn3.jpg); 
     }
     75%{
-        background-image: url(walmart/walmart4.jpg); 
+        background-image: url(walmart/walmartn4.jpg); 
     }
     100%{
-        background-image: url(walmart/walmart1.jpg); 
+        background-image: url(walmart/walmartn1.jpg); 
     }
 }
 
