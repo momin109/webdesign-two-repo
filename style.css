@@ -1,0 +1,262 @@
+
+body{
+    background-color: rgb(216, 228, 230);
+    
+}
+.main-title{
+    margin-top: 70px;
+    padding-left: 83px;
+    font-size: 25px;
+}
+.conteiner{
+    display: flex;
+   
+}
+.product{
+    width: 50%;
+    margin-top: 50px;
+    margin-left : 80px;  
+}
+.product-details{
+width: 500px;
+}
+.paragraph{
+    line-height: 30px;
+    font-size: 18px;
+}
+.title{
+    font-size: 50px;
+}
+
+.btn{
+padding: 10px 30px;
+background-color: #EC2A91;
+color: white;
+border-radius: 20px;
+font-size: 16px;
+border: 1px solid #EC2A91;
+margin-top: 15px;
+}
+.camera{
+    width: 50%;
+}
+.camera img{
+    width: 70%;
+   border: 1px solid rgb(211, 218, 231);
+   border-radius: 50%;
+}
+.camera:hover{
+    transform: scale(1) rotate(180deg);
+    transition: transform 4s ease-in-out;
+}
+/*----popular callection----*/
+
+.collection-title{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2em;
+}
+.Popular-Collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin: 50px 119px;
+}
+.collection{
+    background-color: white;
+    align-items: center;
+    border-radius: 10px;
+    border: 12px solid white;
+    width: 300px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-description{
+    line-height: 5px;
+    color: black;
+}
+.font-style{
+    color: rgb(75, 75, 75);
+}
+
+.product-title{
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
+.product-rate{
+    font-size: 25px;
+}
+.fa-star{
+    color: #FFC014;
+    font-size: 12px;
+}
+.rating{
+    padding-left: 7px;
+}
+.arrow{
+    text-align: right;
+    margin-right: 119px;
+    font-size: 18px;
+    color: #f81244;
+}
+
+
+/*---walmart---*/
+
+.walmart{
+    display: flex;
+    margin: 8%;
+}
+.title-two{
+    font-size: 35px;
+}
+.paragraph-two{
+    color: rgb(61, 60, 60);
+    font-size: 18px;
+}
+.btn-two{
+    background-color: #EC2A91;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: #EC2A91;
+}
+.walmart-bannar{
+    width: 50%;
+}
+
+
+.slider{
+    background-image: url(walmart/walmart1.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    animation: slide 10s infinite;
+    
+}
+@keyframes slide{
+    25%{
+        background-image: url(walmart/walmart2.jpg); 
+    }
+    50%{
+        background-image: url(walmart/walmart3.jpg); 
+    }
+    75%{
+        background-image: url(walmart/walmart4.jpg); 
+    }
+    100%{
+        background-image: url(walmart/walmart1.jpg); 
+    }
+}
+
+.Walmart-Locations{
+    width: 50%;
+}
+.walmart-details{
+    width: 95%;
+    padding-left: 15%;
+}
+
+/*---footer---*/
+
+footer{
+background-color: rgb(5, 2, 56);
+color: white;
+text-align: center;
+height: 200px;
+}
+.footer-details{
+    padding-top: 25px;
+}
+.footer-icon{
+font-size: 20px;
+padding-right: 5px;
+}
+.icon-style{
+    padding-right: 10px;
+}
+
+/*------------------------------------
+        Media queries
+--------------------------------------*/
+
+/*    Mobile device-*/
+@Media only screen and (max-width: 688px){
+    .conteiner{
+        width: 100%;
+    }
+    .conteiner, .walmart{
+    display: inline-block;
+    margin: 10px;
+    }
+
+     .product{
+    width: 50%;
+    margin-top: 10px;
+    margin-left : 3px;  
+    }
+    .product-details{
+    width: 350px;
+    margin-bottom: 20px;
+    }
+    .product{
+     width: 400px;
+    }
+   .camera img{
+    width: 300px;
+    padding-left: 40px;
+     }
+
+    .Popular-Collection{
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 100%;
+    width: 250px;
+    }
+    .slider{ 
+    width: 360px;
+    height: 300px; 
+    }
+    }
+
+            /*    tablet device-*/
+
+    @Media only screen and (min-width: 688px) and
+     (max-width: 992px){
+        .Popular-Collection{
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        .conteiner{
+            width: 100%;
+        }
+        .conteiner, .walmart{
+        display: inline-block;
+        margin: 100px;
+        }
+    
+         .product{
+        width: 50%;
+        margin-top: 10px;
+        margin-left : 3px;  
+        }
+        .product-details{
+        width: 650px;
+        margin-bottom: 20px;
+        }
+        .product{
+         width: 700px;
+        }
+       .camera img{
+        width: 400px;
+        margin-left: 10px;
+        
+         }
+     }
